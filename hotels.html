@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRAVEL INDIA</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="Master.css">
+
+	<style>
+        #zoom {
+          transition: transform .2s; /* Animation */ 
+          margin: 0 auto;
+        }
+        
+        #zoom:hover {
+          transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+        </style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/logo.png" class="img-fluid mx-auto" height="100" width="130" style="border-radius: 30px;">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search...">
+							<button class="btn btn-danger" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>		
+	</header>
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" style="width: 110px; text-align: center;">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html" style="width: 160px; text-align: center;">PACKAGE</a>
+                    </li>
+
+                    <li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;">
+                        <a class="nav-link" href="hotels.html" style="width: 160px; text-align: center;">HOTELS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="thingstodo.html" style="width: 160px; text-align: center;">THINGS TO DO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aboutus.html" style="width: 160px; text-align: center;">ABOUT US</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="width: 160px; text-align: center;">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<br><br>
+    <section>
+        <div class="container">
+            <h2>Hotels in India</h2>
+            <h4>Top stay options curated by Holidify for your travel needs</h4>
+            <div class="container" style="background-color: black;">
+                <br>  
+                    <form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()" style="padding-bottom: 20px;">
+                        
+                        <div class="form-group">
+                            <input type="search" class="form-control" id="city" placeholder="Enter your city" name="city" required=""><span id="citymsg"></span>                    
+                        </div>>&nbsp; &nbsp;&nbsp;
+
+                        <div class="form-group">
+                              <input type="datetime" class="form-control" id="cidate" placeholder="Check in" name="cidate" required=""><span id="cidatemsg"></span>
+                        </div>&nbsp; &nbsp;&nbsp;
+                        <div class="form-group">
+                              <input type="datetime" class="form-control" id="codate" placeholder="check out" name="codate" required=""><span id="codatemsg" required=""></span>
+                        </div>&nbsp; &nbsp;&nbsp;
+
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="mnumber" placeholder="number of person" name="mnumber" required=""><span id="mnumbermsg" required=""></span>
+                        </div>&nbsp; &nbsp;
+
+                        <div class="form-group">
+                        <input style="font-size: 18px; width: 120px;" type="Submit" name="" value="Search" class="btn btn-danger">
+                        </div>   
+            </div>
+            <br>
+            <h4>Best Places To Stay in India</h4>
+            <br>
+            <div class="row">
+                <div class="privatepool">
+                    <img src="img/privatepool.jpg" alt="privatepool" height="100px;" width="100px;" style="border-radius: 50%;">
+                    <p>Private Pool</p>
+                </div>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+                <div class="Luxury Hotels">
+                    <img src="img/LuxuryHotels.jpg" alt="Luxury Hotels" height="100px;" width="100px;" style="border-radius: 50%;">
+                    <p>Luxury Hotels</p>
+                </div>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+                <div class="5-Star Hotels">
+                    <img src="img/5-StarHotels.jpg" alt="5-Star Hotels" height="100px;" width="100px;" style="border-radius: 50%;">
+                    <p>5-Star Hotels</p>
+                </div>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+                <div class="Hostels">
+                    <img src="img/Hostels.jpg" alt="Hostels" height="100px;" width="100px;" style="border-radius: 50%;">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Hostels</p>
+                </div>
+
+                
+            </div>
+            <br>
+            <br>
+            <h4>Top Resorts in India</h4>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/ResortsInLonavala.jpg" alt="Resorts In Lonavala" width="100%" height="200" >
+                            <h5 style="text-align: center;">Resorts In Lonavala</h5>   
+                        </div>
+                    </div>
+                    
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/ResortsInJaipur.jpg" alt="Resorts In Jaipur" width="100%" height="200" >
+                            <h5 style="text-align: center;">Resorts In Jaipur For An Unforgettable Stay</h5>   
+                        </div>
+                    </div>
+
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/ResortsInudaipur.jpg" alt="Resorts In Udaipur" width="100%" height="200" >
+                            <h5 style="text-align: center;">Resorts In Udaipur For A Royal Treat</h5>   
+                        </div>
+                    </div>
+
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/ResortsInGoa.jpg" alt="Resorts In Goa" width="100%" height="200" >
+                            <h5 style="text-align: center;">Resorts In Goa</h5>   
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <h4>Top Villas in India</h4>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/VillasInJaipur.jpg" alt="Villas In Jaipur" width="100%" height="200" >
+                            <h5 style="text-align: center;">Villas In Jaipur</h5>   
+                        </div>
+                    </div>
+                    
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/VillasInHyderabad.jpg" alt="Villas In Hyderabad" width="100%" height="200" >
+                            <h5 style="text-align: center;">Villas In Hyderabad</h5>   
+                        </div>
+                    </div>
+
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/VillasInBangalore.jpg" alt="Villas In Bangalore" width="100%" height="200" >
+                            <h5 style="text-align: center;">Villas In Bangalore</h5>   
+                        </div>
+                    </div>
+
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/VillasInLonavala.jpg" alt="Villas In Lonavala" width="100%" height="200" >
+                            <h5 style="text-align: center;">Villas In Lonavala For A Memorable Staycation</h5>   
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <h4>Best Hotels in India</h4>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/HotelsInChennai.jpg" alt="Hotels In Chennai" width="100%" height="200" >
+                            <h5 style="text-align: center;">5-Star Hotels In Chennai</h5>   
+                        </div>
+                    </div>
+                    
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/HotelsInBangalore.jpg" alt="Hotels In Bangalore" width="100%" height="200" >
+                            <h5 style="text-align: center;">5-Star Hotels In Bangalore For A Luxury Getaway</h5>   
+                        </div>
+                    </div>
+
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/HotelsInMumbai.jpg" alt="Hotels In Mumbai" width="100%" height="200" >
+                            <h5 style="text-align: center;">5 Star Hotels In Mumbai</h5>   
+                        </div>
+                    </div>
+
+                    <div class="card">   
+                        <div class="card-block">
+                            <img id="zoom" src="img/HotelsInPune.jpg" alt="Hotels In Pune" width="100%" height="200" >
+                            <h5 style="text-align: center;">5-Star Hotels In Pune</h5>   
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </section><br><br>
+
+    <footer class="bg-dark">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4 style="text-align: center; color: white;">@ 2023 Travel India. All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

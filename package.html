@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRAVEL INDIA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="popper.js"></script>
+        <script type="text/javascript" src="bootstrap.js"></script>
+        <link rel="stylesheet" type="text/css" href="master.css">
+        <script type="text/javascript" src="contact.js"></script>
+
+
+        <style>
+            #zoom {
+              transition: transform .2s; /* Animation */ 
+              margin: 0 auto;
+            }
+            
+            #zoom:hover {
+              transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+            </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+                        <img src="img/logo.png" class="img-fluid mx-auto" height="100" width="130" style="border-radius: 30px;">
+                    </div>
+
+                    <div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+                        <form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+                            <div class="input-group">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                                <button class="btn btn-danger" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html" style="width: 110px; text-align: center;">HOME</a>
+                        </li>
+    
+                        <li class="nav-item  active" style="border-bottom: 3px solid #77b300; font-size: 17px;">
+                            <a class="nav-link" href="package.html" style="width: 160px; text-align: center;">PACKAGE</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="hotels.html" style="width: 160px; text-align: center;">HOTELS</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="thingstodo.html" style="width: 160px; text-align: center;">THINGS TO DO</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="Aboutus.html" style="width: 160px; text-align: center;">ABOUT US</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="width: 160px; text-align: center;">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+
+        <section>
+            <div class="container">
+                <h3>Trending Holiday Packages This Season</h3>
+                <br>
+                <div class="row">
+                    <div class="card-deck">
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/himachalpradesh.jpg" alt="Himachal Pradesh" width="100%" height="200" >
+                                <h4 id="link" style= "color: black;">Himachal Pradesh package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 5,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+                  
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/Goa.jpg" alt="goa" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Goa package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 4,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/Srinagar.jpg" alt="Srinagar" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Srinagar package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 7,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/Lakshadweep.jpg" alt="Lakshadweep" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Lakshadweep package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 9,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+                  
+                        
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="card-deck">
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/Lonavala.jpg" alt="Lonavala" width="100%" height="200" >
+                                <h4 id="link" style= "color: black;">Lonavala package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 3,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+                  
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/Andaman.jpg" alt="Andaman" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Andaman package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 9,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/Rishikesh.jpg" alt="Rishikesh" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Rishikesh package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 7,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            
+                            <div class="card-block">
+                                <a href="#demo"><img id="zoom" src="img/Shimla.jpg" alt="Shimla" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">shimla package</h4>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 6,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+                  
+                        
+                    </div>
+
+                </div>
+                <br><br>
+
+                <div class="container" style="background-color: black;">
+                    <br>
+                    <h3 style="color: white;">Not sure which package to pick for ?</h3>
+                    <h5 style="color: white;">Talk to our trip experts now to get the best deal</h5>
+                    <br>
+                    <div class="container">
+                        
+                        <form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()" style="padding-bottom: 20px;">
+                            <div class="form-group">
+                                  <input type="text" class="form-control" id="yname" placeholder="Your Name" name="yname" required=""><span id="ynamemsg"></span>
+                            </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <div class="form-group">
+                                  <input type="Email" class="form-control" id="Email" placeholder="Email" name="email" required=""><span id="Emailmsg" required=""></span>
+                            </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="mnumber" placeholder="Mobile number" name="mnumber" required=""><span id="mnumbermsg" required=""></span>
+                            </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <div class="form-group">
+                            <input style="font-size: 18px; width: 120px;" type="Submit" name="" value="Submit" class="btn btn-danger">
+                            </div>
+                    </div>
+                    
+                </div>
+                <br><br>
+                <h3>Top Theme Packages</h3>
+                <BR>
+                <div class="row">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="">
+                            <div class="card-block">
+                                <img id="zoom" src="img/HPackages.jpg" alt="Honeymoon Packages" width="100%" height="200" >
+                                <h4 id="link" style= "color: black;">Honeymoon Packages</h4>
+                                <p class="card-text">
+                                    A Perfect Romantic Getaway With Your Partner
+                                </p>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 10,199
+                                </small>
+                                </p>  
+                                 
+                            </div>
+                        </div>
+                  
+                        <div class="card">
+                            <div class="card-block">
+                                <img id="zoom" src="img/AdventurePackages.webp" alt="Adventure Packages" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Adventure Packages</h4>
+                                <p class="card-text">
+                                    Best Deals For An Adrenaline Filled Holiday
+                                </p>
+                                <p class="card-text">
+                                <small class="text-muted">
+                                    Starting From ₹ 4,199
+                                </small>
+                                </p>  
+                                </a> 
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-block">
+                                <img id="zoom" src="img/FamilyPackages.jpg" alt="Family Packages" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Family Packages</h4>
+                                <p class="card-text">
+                                    Hand Crafted Holidays For An Ideal Family Vacation
+                                </p>
+                                <p>
+                                <small class="text-muted">
+                                    Starting From ₹ 11,199
+                                </small>
+                                </p>  
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-block">
+                                <img id="zoom" src="img/FriendsPackages.jpg" alt="Friends Packages" width="100%" height="200" >
+                                <h4 id="link" style= "color:  black;">Friends Packages</h4>
+                                <p class="card-text">
+                                    Best Of Local And International Travel Packages With Your Closest Friends
+                                </p>
+                                <p >
+                                <small class="text-muted">
+                                    Starting From ₹ 9,199
+                                </small>
+                                </p>  
+                                
+                            </div>
+                        </div>
+                  
+                        
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </section>
+        <br>
+
+        <footer class="bg-dark">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h4 style="text-align: center; color: white;">@ 2023 Travel India. All Copy Rights Reserved. </h4>
+                </div>
+            </div>
+        </footer>
+    
+    </body>
+</html>
